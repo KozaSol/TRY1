@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/calltab"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/menu_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="2dp">
+
+    <ImageView
+        android:id="@+id/img_tabtxt"
+        android:layout_width="@dimen/buttonHeight"
+        android:layout_height="0dip"
+        android:layout_marginTop="3dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/app_name"
+        android:background="@android:color/transparent"
+        android:scaleType="fitEnd" />
+
+    <com.jobsearchtry.utils.MyTextView
+        android:id="@+id/txt_tabtxt"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.6"
+        android:gravity="center|top"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/textSizeAverage"
+        customfontdemo:fontName="MyriadPro-Cond.ttf" />
+</LinearLayout>

@@ -1,0 +1,338 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/header"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="8.12" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="4.87"
+        android:background="@drawable/yellowbg"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/yellow_topnbottom"
+            android:layout_marginLeft="@dimen/marginleftright"
+            android:layout_marginTop="@dimen/yellow_topnbottom"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/job_details" />
+
+        <com.jobsearchtry.utils.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/yellow_topnbottom"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/desiredjd"
+            android:textColor="#000"
+            android:textSize="@dimen/textSizeAverage"
+            customfontdemo:fontName="MyriadPro-BoldCond.otf" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="86.01"
+        android:background="#e0dacc">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/js_Marginright"
+            android:layout_marginRight="@dimen/js_Marginright"
+            android:layout_marginTop="@dimen/buttonHeightSmall"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/js_edit_dj_location_lay"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/editboxheight"
+                android:background="#005d89"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.05"
+                    android:clickable="false"
+                    android:paddingLeft="@dimen/editboxpadding"
+                    android:src="@drawable/cropped_arrow_left" />
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.80"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.jobsearchtry.utils.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/editboxpadding"
+                        android:text="@string/location"
+                        android:textColor="#68b4d8"
+                        android:textSize="@dimen/Text_size"
+                        customfontdemo:fontName="MyriadPro-Cond.ttf" />
+
+                    <com.jobsearchtry.utils.MyButton
+                        android:id="@+id/js_edit_dj_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@color/transparent"
+                        android:clickable="false"
+                        android:maxLines="1"
+                        android:padding="@dimen/editboxpadding"
+                        android:text="@string/select"
+                        android:textColor="#fefefe"
+                        android:textSize="@dimen/Text_size"
+                        customfontdemo:fontName="MyriadPro-Cond.ttf" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_weight="0.05"
+                    android:clickable="false"
+                    android:paddingRight="@dimen/editboxpadding"
+                    android:src="@drawable/cropped_arrow" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/editboxheight"
+                android:layout_marginTop="@dimen/about_trytop"
+                android:orientation="horizontal">
+
+                <com.jobsearchtry.utils.MyTextView
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.40"
+                    android:gravity="center_vertical"
+                    android:text="@string/role"
+                    android:textColor="#4d4d4d"
+                    android:textSize="@dimen/Text_size"
+                    customfontdemo:fontName="MyriadPro-Cond.ttf" />
+
+                <LinearLayout
+                    android:id="@+id/js_edit_dj_role_lay"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.60"
+                    android:background="@drawable/border_edittext"
+                    android:orientation="horizontal">
+
+                    <com.jobsearchtry.utils.MyButton
+                        android:id="@+id/js_edit_dj_role"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:clickable="false"
+                        android:gravity="center|start"
+                        android:maxLines="1"
+                        android:padding="@dimen/editboxpadding"
+                        android:text="@string/selectrole"
+                        android:textColor="#086fa1"
+                        android:textSize="@dimen/Text_size"
+                        customfontdemo:fontName="MyriadPro-Cond.ttf" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border_edittext"
+                        android:clickable="false"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/editboxpadding"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/arrow_down_float"></ImageView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/editboxheight"
+                android:layout_marginTop="@dimen/about_trytop"
+                android:orientation="horizontal">
+
+                <com.jobsearchtry.utils.MyTextView
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.40"
+                    android:gravity="center_vertical"
+                    android:text="@string/industry"
+                    android:textColor="#4d4d4d"
+                    android:textSize="@dimen/Text_size"
+                    customfontdemo:fontName="MyriadPro-Cond.ttf" />
+
+                <LinearLayout
+                    android:id="@+id/js_dj_edit_industry_lay"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.60"
+                    android:background="@drawable/border_edittext"
+                    android:orientation="horizontal">
+
+                    <com.jobsearchtry.utils.MyButton
+                        android:id="@+id/js_dj_edit_industry"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:clickable="false"
+                        android:gravity="center|start"
+                        android:maxLines="1"
+                        android:padding="@dimen/editboxpadding"
+                        android:text="@string/selectindustry"
+                        android:textColor="#086fa1"
+                        android:textSize="@dimen/Text_size"
+                        customfontdemo:fontName="MyriadPro-Cond.ttf" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border_edittext"
+                        android:clickable="false"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/editboxpadding"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/arrow_down_float" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/editboxheight"
+                android:layout_marginTop="@dimen/about_trytop"
+                android:orientation="horizontal">
+
+                <com.jobsearchtry.utils.MyTextView
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.40"
+                    android:gravity="center_vertical"
+                    android:text="@string/sly"
+                    android:textColor="#4d4d4d"
+                    android:textSize="@dimen/Text_size"
+                    customfontdemo:fontName="MyriadPro-Cond.ttf" />
+
+                <LinearLayout
+                    android:id="@+id/js_dj_edit_salary_lay"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.60"
+                    android:background="@drawable/border_edittext"
+                    android:orientation="horizontal">
+
+                    <com.jobsearchtry.utils.MyButton
+                        android:id="@+id/js_dj_edit_salary"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:clickable="false"
+                        android:gravity="center|start"
+                        android:maxLines="1"
+                        android:padding="@dimen/editboxpadding"
+                        android:text="@string/selectsalary"
+                        android:textColor="#086fa1"
+                        android:textSize="@dimen/Text_size"
+                        customfontdemo:fontName="MyriadPro-Cond.ttf" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border_edittext"
+                        android:clickable="false"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/editboxpadding"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/arrow_down_float" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/editboxheight"
+                android:layout_marginTop="@dimen/about_trytop"
+                android:orientation="horizontal">
+
+                <com.jobsearchtry.utils.MyTextView
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.40"
+                    android:gravity="center_vertical"
+                    android:text="@string/jobtype"
+                    android:textColor="#4d4d4d"
+                    android:textSize="@dimen/Text_size"
+                    customfontdemo:fontName="MyriadPro-Cond.ttf" />
+
+                <LinearLayout
+                    android:id="@+id/js_dj_edit_jobtype_lay"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.60"
+                    android:background="@drawable/border_edittext"
+                    android:orientation="horizontal">
+
+                    <com.jobsearchtry.utils.MyButton
+                        android:id="@+id/js_dj_edit_jobtype"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:clickable="false"
+                        android:gravity="center|start"
+                        android:maxLines="1"
+                        android:padding="@dimen/editboxpadding"
+                        android:text="@string/selectjobtype"
+                        android:textColor="#086fa1"
+                        android:textSize="@dimen/Text_size"
+                        customfontdemo:fontName="MyriadPro-Cond.ttf" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border_edittext"
+                        android:clickable="false"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/editboxpadding"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/arrow_down_float" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/buttonHeightLarge"
+                android:layout_marginTop="@dimen/buttonHeightSmall"
+                android:orientation="vertical">
+
+                <com.jobsearchtry.utils.MyButton
+                    android:id="@+id/js_try_DJ_EDIT_Submit"
+                    style="@style/App_ButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/submit"
+                    customfontdemo:fontName="MyriadPro-BoldCond.otf" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        layout="@layout/bottomblue_footer"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" />
+</LinearLayout>

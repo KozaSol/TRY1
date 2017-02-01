@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/header"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="10.8" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="4.8"
+        android:background="@drawable/yellowbg"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/yellow_topnbottom"
+            android:layout_marginLeft="@dimen/marginleftright"
+            android:layout_marginTop="@dimen/yellow_topnbottom"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/add_black_icon" />
+
+        <com.jobsearchtry.utils.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/yellow_topnbottom"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/login"
+            android:textColor="#000"
+            android:textSize="@dimen/textSizeAverage"
+            customfontdemo:fontName="MyriadPro-BoldCond.otf" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="83.4"
+        android:background="#e0dacc"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/jobseekar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/listbox"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/jobseekerr" />
+
+            <com.jobsearchtry.utils.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="bottom|center"
+                android:paddingBottom="@dimen/layoutmargintop"
+                android:text="@string/jseeker"
+                android:textColor="#fff"
+                android:textSize="@dimen/js_loginhmesize"
+                customfontdemo:fontName="MyriadPro-Cond.ttf" />
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/employer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/oopsbutton_bottom"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/employerr" />
+
+            <com.jobsearchtry.utils.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="bottom|center"
+                android:paddingBottom="@dimen/layoutmargintop"
+                android:text="@string/empoly"
+                android:textColor="#fff"
+                android:textSize="@dimen/js_loginhmesize"
+                customfontdemo:fontName="MyriadPro-Cond.ttf"
+                android:id="@+id/myTextView3" />
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/bottomblue_footer"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" />
+</LinearLayout>

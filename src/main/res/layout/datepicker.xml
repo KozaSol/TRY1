@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#2e2e2e"
+    android:fitsSystemWindows="true"
+    android:padding="5dip">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#2e2e2e"
+        android:baselineAligned="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.jobsearchtry.utils.MyButton
+                android:id="@+id/am_month_plus"
+                android:layout_width="@dimen/filter_layheight"
+                android:layout_height="@dimen/buttonHeight"
+                android:background="#088cbd"
+                android:text="+"
+                android:textColor="#fff"
+                android:textSize="@dimen/textSizeNormal"
+                customfontdemo:fontName="MyriadPro-Cond.ttf" />
+
+            <com.jobsearchtry.utils.MyEditText
+                android:id="@+id/am_month_display"
+                style="@style/App_EditTextStyle"
+                android:layout_width="@dimen/filter_layheight"
+                android:layout_height="@dimen/buttonHeight"
+                android:background="@drawable/border_edittext"
+                android:focusable="false"
+                android:gravity="center"
+                android:maxLines="1"
+                customfontdemo:fontName="MyriadPro-Cond.ttf" />
+
+
+            <com.jobsearchtry.utils.MyButton
+                android:id="@+id/am_month_minus"
+                android:layout_width="@dimen/filter_layheight"
+                android:layout_height="@dimen/buttonHeight"
+                android:background="#088cbd"
+                android:text="-"
+                android:textColor="#fff"
+                android:textSize="@dimen/textSizeNormal"
+                customfontdemo:fontName="MyriadPro-Cond.ttf" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.jobsearchtry.utils.MyButton
+                android:id="@+id/am_date_plus"
+                android:layout_width="@dimen/filter_layheight"
+                android:layout_height="@dimen/buttonHeight"
+                android:background="#088cbd"
+                android:text="+"
+                android:textColor="#fff"
+                android:textSize="@dimen/textSizeNormal"
+                customfontdemo:fontName="MyriadPro-Cond.ttf" />
+
+            <com.jobsearchtry.utils.MyEditText
+                android:id="@+id/am_date_display"
+                style="@style/App_EditTextStyle"
+                android:layout_width="@dimen/filter_layheight"
+                android:layout_height="@dimen/buttonHeight"
+                android:background="@drawable/border_edittext"
+                android:focusable="false"
+                android:gravity="center"
+                android:maxLines="1"
+                customfontdemo:fontName="MyriadPro-Cond.ttf" />
+
+            <com.jobsearchtry.utils.MyButton
+                android:id="@+id/am_date_minus"
+                android:layout_width="@dimen/filter_layheight"
+                android:layout_height="@dimen/buttonHeight"
+                android:background="#088cbd"
+                android:text="-"
+                android:textColor="#fff"
+                android:textSize="@dimen/textSizeNormal"
+                customfontdemo:fontName="MyriadPro-Cond.ttf" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.jobsearchtry.utils.MyButton
+                android:id="@+id/am_year_plus"
+                android:layout_width="@dimen/filter_layheight"
+                android:layout_height="@dimen/buttonHeight"
+                android:background="#088cbd"
+                android:text="+"
+                android:textColor="#fff"
+                android:textSize="@dimen/textSizeNormal"
+                customfontdemo:fontName="MyriadPro-Cond.ttf" />
+
+            <com.jobsearchtry.utils.MyEditText
+                android:id="@+id/am_year_display"
+                style="@style/App_EditTextStyle"
+                android:layout_width="@dimen/filter_layheight"
+                android:layout_height="@dimen/buttonHeight"
+                android:background="@drawable/border_edittext"
+                android:focusable="false"
+                android:gravity="center"
+                android:maxLines="1"
+                customfontdemo:fontName="MyriadPro-Cond.ttf" />
+
+            <com.jobsearchtry.utils.MyButton
+                android:id="@+id/am_year_minus"
+                android:layout_width="@dimen/filter_layheight"
+                android:layout_height="@dimen/buttonHeight"
+                android:background="#088cbd"
+                android:text="-"
+                android:textColor="#fff"
+                android:textSize="@dimen/textSizeNormal"
+                customfontdemo:fontName="MyriadPro-Cond.ttf" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

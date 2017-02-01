@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/updateskillid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/js_edit_skillname_lay"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="@dimen/margintop"
+        android:layout_weight="0.65"
+        android:background="@drawable/border_edittext"
+        android:orientation="horizontal">
+
+        <com.jobsearchtry.utils.MyButton
+            android:id="@+id/js_edit_skillname"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="#005d89"
+            android:text="@string/select"
+            android:textColor="#fefefe"
+            android:textSize="@dimen/Text_size"
+            customfontdemo:fontName="MyriadPro-Cond.ttf" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/js_edit_exp_lay"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="@dimen/margintop"
+        android:layout_weight="0.65"
+        android:background="@drawable/border_edittext"
+        android:orientation="horizontal">
+
+        <com.jobsearchtry.utils.MyButton
+            android:id="@+id/js_edit_exp"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:clickable="false"
+            android:gravity="center|start"
+            android:maxLines="1"
+            android:padding="@dimen/editboxpadding"
+            android:text="@string/experience"
+            android:textColor="#086fa1"
+            android:textSize="@dimen/Text_size"
+            customfontdemo:fontName="MyriadPro-Cond.ttf" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/border_edittext"
+            android:clickable="false"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/editboxpadding"
+            android:scaleType="fitCenter"
+            android:src="@drawable/arrow_down_float" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/skill_deleteicon"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="@dimen/margintop"
+        android:layout_marginRight="@dimen/margintop"
+        android:layout_weight="0.14"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitCenter"
+        android:src="@drawable/trash_icon" />
+
+</LinearLayout>

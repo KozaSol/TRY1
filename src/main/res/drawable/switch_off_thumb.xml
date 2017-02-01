@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/off"
+    android:insetBottom="@dimen/cpb_stroke_width"
+    android:insetLeft="@dimen/cpb_stroke_width"
+    android:insetRight="@dimen/cpb_stroke_width"
+    android:insetTop="@dimen/cpb_stroke_width" />

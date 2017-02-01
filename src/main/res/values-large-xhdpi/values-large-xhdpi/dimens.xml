@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="textSize">35sp</dimen>
+    <dimen name="textSizeSmall">24sp</dimen>
+    <dimen name="textSizeLarge">50sp</dimen>
+    <dimen name="textSizeExtraLarge">60sp</dimen>
+    <dimen name="buttonHeight">100dp</dimen>
+    <dimen name="buttonHeightNormal">80dp</dimen>
+    <dimen name="buttonHeightLarge">120dp</dimen>
+    <dimen name="buttonHeightSmall">60dp</dimen>
+    <dimen name="textSizeToSmall">22sp</dimen>
+    <dimen name="layoutsize">500dp</dimen>
+    <dimen name="layoutsizeLarge">700dp</dimen>
+    <dimen name="top">2dp</dimen>
+    <dimen name="seekbarsize">16dp</dimen>
+    <dimen name="button_size">48dp</dimen>
+    <dimen name="textSizeAverage">18sp</dimen>
+    <dimen name="margintop">5dp</dimen>
+    <dimen name="marginleftright">14.67dp</dimen>
+    <dimen name="margintopten">7dp</dimen>
+    <dimen name="layoutmargintop">10dp</dimen>
+    <dimen name="textSizeNormal">38sp</dimen>
+    <dimen name="buttonHeightToSmall">40dp</dimen>
+    <dimen name="loginbutton">165dp</dimen>
+    <dimen name="cpb_stroke_width">4dp</dimen>
+
+</resources>

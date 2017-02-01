@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jobsearchtry.utils.MyTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/listbox"
+    android:gravity="start|center"
+    android:padding="5dp"
+    android:textColor="#086fa1"
+    android:textColorHint="#80086fa1"
+    android:textSize="@dimen/textSizeAverage"
+    customfontdemo:fontName="MyriadPro-Cond.ttf" />

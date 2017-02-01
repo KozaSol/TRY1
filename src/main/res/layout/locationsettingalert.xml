@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#dedede"
+    android:orientation="vertical">
+
+    <com.jobsearchtry.utils.MyTextView
+        android:id="@+id/lsa_popupheader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#086fa1"
+        android:padding="15dp"
+        android:text="@string/locationactivetitle"
+        android:textColor="#fff"
+        android:textSize="@dimen/textSize"
+        customfontdemo:fontName="MyriadPro-Cond.ttf" />
+
+    <com.jobsearchtry.utils.MyTextView
+        android:id="@+id/lsa_popupmessage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#dedede"
+        android:padding="15dp"
+        android:text="@string/locationactivemessage"
+        android:textColor="#2e2e2e"
+        android:textSize="@dimen/textSize"
+        customfontdemo:fontName="MyriadPro-Cond.ttf" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#2e2e2e"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.jobsearchtry.utils.MyButton
+            android:id="@+id/lsa_done_filter"
+            style="@style/App_ButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/marginleftright"
+            android:text="@string/ok"
+            customfontdemo:fontName="MyriadPro-BoldCond.otf" />
+    </LinearLayout>
+</LinearLayout>

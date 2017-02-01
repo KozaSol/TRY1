@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border_listview"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+    <com.jobsearchtry.utils.MyTextView
+        android:id="@+id/myfav_name"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.90"
+        android:textColor="#006292"
+        android:textSize="@dimen/textSizeNormal"
+        android:textStyle="bold"
+        customfontdemo:fontName="MyriadPro-Cond.ttf"
+        android:maxLines="1"/>
+
+        <ImageView
+            android:id="@+id/emp_favjob_delete"
+            android:layout_width="0dip"
+            android:layout_height="@dimen/termsht"
+            android:layout_weight="0.10"
+            android:paddingBottom="3dp"
+            android:scaleType="fitEnd"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/trash_icon" />
+
+    </LinearLayout>
+
+    <com.jobsearchtry.utils.MyTextView
+        android:id="@+id/myfav_role"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="@dimen/textSizeAverage"
+        android:textStyle="bold"
+        customfontdemo:fontName="MyriadPro-Cond.ttf"
+        android:maxLines="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <com.jobsearchtry.utils.MyTextView
+            android:id="@+id/emp_my_quali"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|start"
+            android:maxLines="1"
+            android:textColor="#745a01"
+            android:textSize="@dimen/textSizeSmall"
+            android:textStyle="bold"
+            customfontdemo:fontName="MyriadPro-Cond.ttf" />
+
+        <com.jobsearchtry.utils.MyTextView
+            android:id="@+id/emp_myfav_exp"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|start"
+            android:maxLines="1"
+            android:textColor="#745a01"
+            android:textSize="@dimen/textSizeSmall"
+            android:textStyle="bold"
+            customfontdemo:fontName="MyriadPro-Cond.ttf" />
+
+    </LinearLayout>
+
+</LinearLayout>

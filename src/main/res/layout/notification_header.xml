@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jobsearchtry.utils.MyTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/notificationlistDate"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:gravity="start"
+    android:paddingTop="@dimen/jsforgot_bottom"
+    android:layout_marginLeft="@dimen/Filter_layoutbottom"
+    android:paddingLeft="3dp"
+    android:shadowDx="1"
+    android:shadowDy="1"
+    android:textColor="#80333333"
+    android:textSize="@dimen/js_notitxtsize"
+    customfontdemo:fontName="MyriadPro-Cond.ttf" />

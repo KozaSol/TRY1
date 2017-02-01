@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/alertdig_width"
+    android:layout_height="@dimen/alertdig_height"
+    android:background="#f2f2f2"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <com.jobsearchtry.utils.MyTextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/oops"
+        android:textColor="#eab300"
+        android:textSize="@dimen/textSizeLarge"
+        customfontdemo:fontName="MyriadPro-Cond.ttf" />
+
+    <com.jobsearchtry.utils.MyTextView
+        android:id="@+id/r_fpsubhead"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:textSize="@dimen/textSize"
+        customfontdemo:fontName="MyriadPro-Cond.ttf" />
+
+    <com.jobsearchtry.utils.MyEditText
+        android:id="@+id/r_fb_mobilenumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/border_edittext"
+        android:enabled="false"
+        android:gravity="center|start"
+        android:inputType="number"
+        android:maxLines="1"
+        android:minHeight="@dimen/buttonHeight"
+        android:padding="10dp"
+        android:textColor="#086fa1"
+        android:textSize="@dimen/textSize"
+        customfontdemo:fontName="MyriadPro-Cond.ttf" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/Fd_ratetopandbottom"
+        android:layout_marginTop="@dimen/postparttop"
+        android:orientation="horizontal">
+
+        <com.jobsearchtry.utils.MyButton
+            android:id="@+id/r_try_fb_submit"
+            style="@style/App_ButtonStyle"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/submit"
+            customfontdemo:fontName="MyriadPro-BoldCond.otf" />
+
+        <com.jobsearchtry.utils.MyButton
+            android:id="@+id/r_try_fb_cancel"
+            style="@style/App_ButtonStyle"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="@string/cancel"
+            customfontdemo:fontName="MyriadPro-BoldCond.otf" />
+    </LinearLayout>
+
+</LinearLayout>

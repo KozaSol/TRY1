@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jobsearchtry.utils.MyTextView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+                                   android:id="@+id/spinneritemspeci"
+                                   android:layout_width="fill_parent"
+                                   android:layout_height="fill_parent"
+                                   android:gravity="start|center"
+                                   android:padding="10dp"
+                                   android:textColorHint="#80086fa1"
+                                   android:textColor="#086fa1"
+                                   android:textSize="@dimen/textSize"
+                                   customfontdemo:fontName="MyriadPro-Cond.ttf"
+                                   android:maxLines="1"/>

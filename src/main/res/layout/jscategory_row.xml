@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <com.jobsearchtry.utils.SquareImageView
+            android:id="@+id/grid_item_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_launchernew" />
+
+        <com.jobsearchtry.utils.MyTextView
+            android:id="@+id/gridcategoryname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="@dimen/emp_imgtop"
+            android:text="@string/editjob"
+            android:textColor="#fff"
+            android:textSize="@dimen/icon_txtsize"
+            customfontdemo:fontName="MyriadPro-Cond.ttf" />
+    </FrameLayout>
+</GridLayout>

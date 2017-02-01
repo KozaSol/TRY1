@@ -1,0 +1,172 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:editTextStyle">@style/App_EditTextStyle</item>
+        <item name="android:windowDisablePreview">true</item>
+
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+              <item name="android:buttonStyle">@style/App_ButtonStyle</item>
+        -->
+    </style>
+
+    <style name="Theme.Trans" parent="android:Theme.Translucent">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="TransparentProgressDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+    </style>
+
+    <style name="App_EditTextStyle" parent="@android:style/Widget.EditText">
+        <item name="android:background">@drawable/border_edittext</item>
+        <item name="android:textColor">#086fa1</item>
+        <item name="android:textColorHint">#92c5d6</item>
+        <item name="android:padding">@dimen/editboxpadding</item>
+        <item name="android:textSize">@dimen/editbox_textsize</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="App_ButtonStyle" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/button</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/Textsize_button</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:shadowColor">@color/TransparentGrey</item>
+        <item name="android:shadowDx">3</item>
+        <item name="android:shadowDy">3</item>
+        <item name="android:shadowRadius">1.5</item>
+    </style>
+
+    <style name="mySwitchStyle">
+        <item name="switchTextAppearanceAttrib">@style/mySwitchTextAppearance</item>
+        <item name="textOn">ON</item>
+        <item name="textOff">OFF</item>
+        <item name="textOnThumb">true</item>
+        <item name="thumbExtraMovement">0dp</item>
+        <item name="thumbTextPadding1">15dp</item>
+        <item name="trackTextPadding1">15dp</item>
+        <item name="switchMinWidth1">@dimen/buttonHeightLarge</item>
+        <item name="switchMinHeight1">@dimen/buttonHeightSmall</item>
+    </style>
+    <style name="Datepickertheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:textColorPrimary">#212121</item>
+        <item name="android:textColorSecondary">#727272</item>
+        <item name="android:textColorPrimaryInverse">#FFFFFF</item>
+        <item name="android:windowBackground">@drawable/datepickerbackground</item>
+    </style>
+
+    <style name="mySwitchTextAppearance">
+        <item name="textColor">#989898</item>
+        <item name="textSize">16sp</item>
+        <item name="textStyle">normal</item>
+    </style>
+
+    <style name="AppTheme" parent="AppBaseTheme" />
+
+    <style name="MyTheme_ALERT" parent="android:Theme.Light">
+        <item name="android:alertDialogStyle">@style/AlertDialogCustom</item>
+        <item name="android:textColorPrimary">#fff</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@color/wbackground</item>
+        <item name="android:textSize">@dimen/textSize</item>
+        <item name="android:buttonBarStyle">@style/MyButtonBar</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:buttonBarButtonStyle">@style/MyBorderlessButton</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowMinWidthMajor">@android:dimen/dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@android:dimen/dialog_min_width_minor</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:listChoiceIndicatorMultiple">@drawable/custom_checkbox</item>
+    </style>
+
+    <style name="MyTheme" parent="android:Theme.Holo.Dialog">
+        <item name="android:alertDialogStyle">@style/CustomAlertDialogStyle</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="CustomAlertDialogStyle">
+        <item name="android:bottomBright">@color/transparent</item>
+        <item name="android:bottomDark">@color/transparent</item>
+        <item name="android:bottomMedium">@color/transparent</item>
+        <item name="android:centerBright">@color/transparent</item>
+        <item name="android:centerDark">@color/transparent</item>
+        <item name="android:centerMedium">@color/transparent</item>
+        <item name="android:fullBright">@color/transparent</item>
+        <item name="android:fullDark">@color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:topBright">@color/transparent</item>
+        <item name="android:topDark">@color/transparent</item>
+    </style>
+    <style name="MyThemeDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <style name="AlertDialogCustom" parent="@android:style/Theme.Dialog">
+        <item name="android:bottomBright">@color/transparent</item>
+        <item name="android:bottomDark">@color/transparent</item>
+        <item name="android:bottomMedium">@color/transparent</item>
+        <item name="android:centerBright">@color/transparent</item>
+        <item name="android:centerDark">@color/transparent</item>
+        <item name="android:centerMedium">@color/transparent</item>
+        <item name="android:fullBright">@color/transparent</item>
+        <item name="android:fullDark">@color/transparent</item>
+        <item name="android:topBright">@color/alerthb</item>
+        <item name="android:topDark">@color/alerthb</item>
+    </style>
+
+    <style name="MyBorderlessButton">
+        <item name="android:background">@drawable/button</item>
+        <item name="android:textSize">@dimen/textSize</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="MyButtonBar">
+        <item name="android:divider">@color/dividercolor</item>
+        <item name="android:dividerPadding">5dp</item>
+        <item name="android:background">?android:attr/dividerVertical</item>
+    </style>
+
+    <style name="fileChooserName">
+        <item name="android:drawablePadding">@dimen/list_item_padding</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:paddingLeft">@dimen/list_item_padding</item>
+        <item name="android:paddingRight">@dimen/list_item_padding</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+    <!--<style name="Ratingbar" parent="@android:style/Widget.RatingBar">-->
+    <!--<item name="colorControlNormal">#ffffff</item>-->
+    <!--<item name="colorControlActivated">#318CE7</item>-->
+    <!--</style>-->
+</resources>

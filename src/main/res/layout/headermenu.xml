@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bluebg">
+
+    <ImageButton
+        android:id="@+id/js_r_h"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.8"
+        android:layout_marginLeft="@dimen/marginlr"
+        android:layout_marginTop="@dimen/logotb"
+        android:layout_marginBottom="@dimen/logotb"
+        android:layout_marginRight="@dimen/marginlr"
+        android:background="@color/transparent"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitStart"
+        android:src="@drawable/logo" />
+</LinearLayout>

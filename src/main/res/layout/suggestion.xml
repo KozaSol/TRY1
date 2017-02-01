@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:orientation="horizontal"
+        android:padding="@dimen/seekbarsize">
+        <ImageView
+            android:id="@+id/au_searchjobvalue_back"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|end"
+            android:layout_weight="0.10"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/app_name"
+            android:padding="2dp"
+            android:src="@drawable/back_icon"
+            />
+        <com.jobsearchtry.utils.CustomAutoCompleteTextView
+            android:id="@+id/au_searchjobvalue"
+            style="@style/App_EditTextStyle"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start"
+            android:layout_weight="0.90"
+            android:background="@color/transparent"
+            android:gravity="center|start"
+            android:hint="@string/searchboxvalue"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingLeft="5dp"
+            android:popupBackground="#ffffff"
+            android:textColor="#086fa1"
+            android:textColorHint="#086fa1"
+            android:textCursorDrawable="@drawable/custom_cursor"
+            android:textSize="@dimen/textSizeAverage"
+            customfontdemo:fontName="MyriadPro-Cond.ttf" />
+
+        <ImageView
+            android:id="@+id/au_searchjobvalue_clear"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|end"
+            android:layout_weight="0.10"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/app_name"
+            android:padding="2dp"
+            android:src="@drawable/close_icon"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/au_js_home_filter"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|end"
+            android:layout_weight="0.10"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/app_name"
+            android:padding="2dp"
+            android:src="@drawable/filter_icon" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/bluebg" />
+
+    <ListView
+        android:id="@+id/au_sugglist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/seekbarsize" />
+
+</LinearLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border_white"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <com.jobsearchtry.utils.MyTextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginleftright"
+        android:gravity="start|center"
+        android:text="@string/setcalltime"
+        android:textColor="#006494"
+        android:textSize="@dimen/textSize"
+        customfontdemo:fontName="MyriadPro-Cond.ttf" />
+
+    <RadioGroup
+        android:id="@+id/emp_settime_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginleftright"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/emp_anytime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawableLeft="@drawable/radio_button_selector"
+            android:drawablePadding="@dimen/margintop"
+            android:text="@string/anytime" />
+
+        <RadioButton
+            android:id="@+id/emp_specifictime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margintop"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawableLeft="@drawable/radio_button_selector"
+            android:drawablePadding="@dimen/margintop"
+            android:text="@string/spectime" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/specitimelay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginleftright"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.jobsearchtry.utils.MyTextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center|start"
+                android:text="@string/from"
+                android:textColor="#088fc0"
+                android:textSize="@dimen/textSizeNormal"
+                customfontdemo:fontName="MyriadPro-Cond.ttf" />
+
+            <LinearLayout
+                android:id="@+id/emp_time_from_lay"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/border_edittext"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/emp_time_from"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.3"
+                    android:background="@android:color/transparent"
+                    android:gravity="center|start"
+                    android:paddingLeft="@dimen/margintop" />
+
+                <ImageButton
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/border_edittext"
+                    android:clickable="false"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/arrow_down_float" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margintopten"
+            android:layout_marginRight="@dimen/marginleftright"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.jobsearchtry.utils.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center|start"
+                android:text="@string/to"
+                android:textColor="#088fc0"
+                android:textSize="@dimen/textSizeNormal"
+                customfontdemo:fontName="MyriadPro-Cond.ttf" />
+
+            <LinearLayout
+                android:id="@+id/emp_time_to_lay"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/border_edittext"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/emp_time_to"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.3"
+                    android:background="@android:color/transparent"
+                    android:gravity="start|center"
+                    android:paddingLeft="@dimen/margintop" />
+
+                <ImageButton
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/border_edittext"
+                    android:clickable="false"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/arrow_down_float" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+        <com.jobsearchtry.utils.MyButton
+            android:id="@+id/emp_profille_time_Submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/App_ButtonStyle"
+            android:text="@string/submit"
+            android:layout_marginTop="@dimen/buttonHeightToSmall"
+            customfontdemo:fontName="MyriadPro-BoldCond.otf" />
+</LinearLayout>
+

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#dedede"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <com.jobsearchtry.utils.MyTextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/oops"
+        android:textColor="#eab300"
+        android:textSize="@dimen/inal_txtsize"
+        android:textStyle="bold"
+        customfontdemo:fontName="MyriadPro-Cond.ttf" />
+
+    <com.jobsearchtry.utils.MyTextView
+        android:id="@+id/invalidmsg_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/invalid"
+        android:textColor="#004d72"
+        android:textSize="@dimen/textSizeNormal"
+        customfontdemo:fontName="MyriadPro-Cond.ttf" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.jobsearchtry.utils.MyButton
+            android:id="@+id/try_invalid_login_submit"
+            style="@style/App_ButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/buttonHeightToSmall"
+            android:layout_marginTop="@dimen/buttonHeightToSmall"
+            android:text="@string/ok"
+            customfontdemo:fontName="MyriadPro-BoldCond.otf" />
+    </LinearLayout>
+
+</LinearLayout>

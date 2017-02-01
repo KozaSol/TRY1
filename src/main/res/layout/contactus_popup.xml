@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/alertdig_width"
+    android:layout_height="@dimen/alertdig_height"
+    android:background="#f2f2f2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/locheader"
+        android:background="#088cbd"
+        android:orientation="horizontal">
+
+        <com.jobsearchtry.utils.MyTextView
+            android:id="@+id/loc_popupheader"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="@dimen/emp_imageright"
+            android:layout_marginLeft="@dimen/marginl"
+            android:layout_marginTop="@dimen/emp_imageright"
+            android:layout_weight="0.80"
+            android:gravity="center|start"
+            android:text="@string/thnk"
+            android:textColor="#fff"
+            android:textSize="@dimen/Textsize_button"
+            customfontdemo:fontName="MyriadPro-Cond.ttf" />
+
+        <ImageButton
+            android:id="@+id/exit_alert"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|end"
+            android:layout_marginRight="@dimen/emp_imageright"
+            android:adjustViewBounds="true"
+            android:background="@color/transparent"
+            android:src="@drawable/exit" />
+    </LinearLayout>
+
+    <com.jobsearchtry.utils.MyTextView
+        android:id="@+id/popup_message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/alertdialog_left"
+        android:layout_marginLeft="@dimen/margintop"
+        android:text="@string/contact_mes"
+        android:textColor="#004d72"
+        android:textSize="@dimen/textSizeNormal"
+        customfontdemo:fontName="MyriadPro-Cond.ttf" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="@dimen/jslogin_Buttonbottom"
+        android:layout_marginTop="@dimen/alertdialog_left"
+        android:orientation="vertical">
+
+        <com.jobsearchtry.utils.MyButton
+            android:id="@+id/contactus_popup"
+            style="@style/App_ButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="@string/close"
+            customfontdemo:fontName="MyriadPro-BoldCond.otf" />
+    </LinearLayout>
+</LinearLayout>

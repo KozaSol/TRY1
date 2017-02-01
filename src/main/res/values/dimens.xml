@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    //textsize
+    <dimen name="List_jobposted">11.49sp</dimen>
+    <dimen name="icon_txtsize">12.6sp</dimen>
+    <dimen name="about_foundersize">11.90sp</dimen>
+    <dimen name="emp_txtsize">11.93sp</dimen>
+    <dimen name="txtSizeSmall">12.67sp</dimen>
+    <dimen name="jsMyprof_normaltext">13.39sp</dimen>
+    <dimen name="txtSizeMedium">13.67sp</dimen>
+    <dimen name="textSizeSmall">14sp</dimen>
+    <dimen name="about_founnamesize">14.62sp</dimen>
+    <dimen name="List_Locsize">14.66sp</dimen>
+    <dimen name="post_ExpTextsize">14.72sp</dimen>
+    <dimen name="txtSizeSHeader">15sp</dimen>
+    <dimen name="today">15.86sp</dimen>
+    <dimen name="about_advisize">16.43sp</dimen>
+    <dimen name="Filter_Locsize">16.67sp</dimen>
+    <dimen name="js_detailtxtsize">16.84sp</dimen>
+    <dimen name="textsize">17.33sp</dimen>
+    <dimen name="jssalary_size">17.39sp</dimen>
+    <dimen name="textSizeAverage">17.67sp</dimen>
+    <dimen name="Textsize_yellowlayout">17.90sp</dimen>
+    <dimen name="Filter_Buttonsize">18.33sp</dimen>
+    <dimen name="Text_size">18.33sp</dimen>
+    <dimen name="editbox_textsize">18.33sp</dimen>
+    <dimen name="textSizeKeyword">18.67sp</dimen>
+    <dimen name="textSize">20sp</dimen>
+    <dimen name="Filter_Textsize">20.80sp</dimen>
+    <dimen name="callrec_txtsize">21.67sp</dimen>
+    <dimen name="List_Namesize">22.91sp</dimen>
+    <dimen name="textSizeNormal">23sp</dimen>
+    <dimen name="Textsize_button">23.48sp</dimen>
+    <dimen name="notifycount">24.67sp</dimen>
+    <dimen name="chooselang">24.86sp</dimen>
+    <dimen name="about_txtsize">25.35sp</dimen>
+    <dimen name="Textsize_loginedit">25.44sp</dimen>
+    <dimen name="Textsize_forgotpass">29.67sp</dimen>
+    <dimen name="textSizeLarge">30sp</dimen>
+    <dimen name="jsMyprof_namesize">32.18sp</dimen>
+    <dimen name="Myprof_textsize">32.18sp</dimen>
+    <dimen name="post_DegTextsize">36.73sp</dimen>
+    <dimen name="jsheader_txtsize">36.73sp</dimen>
+    <dimen name="textSizeExtraLarge">40sp</dimen>
+
+    <dimen name="margintop">5dp</dimen>
+    <dimen name="marginleftright">14.67dp</dimen>
+    <dimen name="editboxheight">35.67dp</dimen>
+    <dimen name="top">2dp</dimen>
+    <dimen name="topwhite">0.0033dp</dimen>
+    <dimen name="divideheight">0.33dp</dimen>
+    <dimen name="margintopten">7dp</dimen>
+    <dimen name="call_radioleft">16.67dp</dimen>
+    <dimen name="call_specftmetop">25.67dp</dimen>
+    <dimen name="closeright">18.67dp</dimen>
+    <dimen name="buttonHeightLarge">70dp</dimen>
+    <dimen name="buttonHeight">50dp</dimen>
+    <dimen name="buttonHeightNormal">40dp</dimen>
+    <dimen name="buttonHeightSmall">30dp</dimen>
+    <dimen name="buttonHeightToSmall">20dp</dimen>
+    <dimen name="textSizeToSmall">12sp</dimen>
+    <dimen name="layoutsize">150dp</dimen>
+    <dimen name="layoutsizeLarge">200dp</dimen>
+    <dimen name="loginbutton">165dp</dimen>
+    <dimen name="cpb_stroke_width">4dp</dimen>
+    <dimen name="seekbarsize">8dp</dimen>
+    <dimen name="searchtop">8dp</dimen>
+    <dimen name="searchtopp">-1.5dp</dimen>
+    <dimen name="list_item_padding">16dp</dimen>
+    <dimen name="min_height">55.5dp</dimen>
+    <dimen name="notify_bell">21.67dp</dimen>
+    <dimen name="image_dimen">48dp</dimen>
+    <dimen name="image_top_margin">12dp</dimen>
+    <dimen name="image_side_margin">16dp</dimen>
+    <dimen name="text_margin">60dp</dimen>
+    <dimen name="text_margin_menu">65dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="margintb">11.67dp</dimen>
+    <dimen name="joblisttop">5.30dp</dimen>
+    <dimen name="searchboxtop">3.30dp</dimen>
+    <dimen name="joblistlr">10dp</dimen>
+    <dimen name="categorylr">16.67dp</dimen>
+    <dimen name="categoryvs">10dp</dimen>
+    <dimen name="divider">1dp</dimen>
+    <dimen name="jsheaderdivide">7.63dp</dimen>
+    <dimen name="subheaddivide">3dp</dimen>
+    <dimen name="logotb">8.33dp</dimen>
+    <dimen name="existsb">20dp</dimen>
+    <dimen name="suggestionlistl">16dp</dimen>
+    <dimen name="sublogotb">5dp</dimen>
+    <dimen name="termstb">21.67dp</dimen>
+    <dimen name="termsht">25dp</dimen>
+    <dimen name="termsl">18.33dp</dimen>
+    <dimen name="loginhomel">101.67dp</dimen>
+    <dimen name="logindivider">49dp</dimen>
+    <dimen name="loginhomeb">114.33dp</dimen>
+    <dimen name="loginhomet">71dp</dimen>
+    <dimen name="loginhomer">99.33dp</dimen>
+    <dimen name="loginhomeih">159.33dp</dimen>
+    <dimen name="js_Margintop">36.67dp</dimen>
+    <dimen name="js_Marginleft">25.33dp</dimen>
+    <dimen name="js_Marginright">22.67dp</dimen>
+    <dimen name="Txtview_Margintop">18.33dp</dimen>
+    <dimen name="Button_Margintop">26.67dp</dimen>
+    <dimen name="Button_Marginbottom">48.67dp</dimen>
+    <dimen name="jsforgot_top">28.33dp</dimen>
+    <dimen name="termandcondition">7.10dp</dimen>
+
+    <!--JobSeeker_Login -->
+    <dimen name="jslogin_Margintop">59dp</dimen>
+    <dimen name="jslogin_Marginleft">36.67dp</dimen>
+    <dimen name="jslogin_Marginright">42dp</dimen>
+    <dimen name="jsforgot_bottom">22dp</dimen>
+    <dimen name="jsloginEdit_Margintop">25.67dp</dimen>
+    <dimen name="jslogin_Buttontop">23.33dp</dimen>
+    <dimen name="jslogin_fptop">12.33dp</dimen>
+    <dimen name="jslogin_Buttonbottom">20.00dp</dimen>
+    <dimen name="notify_txt">20.89sp</dimen>
+    <dimen name="jslogin_Trytop">51.67dp</dimen>
+    <dimen name="jslogin_TryRegtop">14.33dp</dimen>
+    <dimen name="jslogin_sugg">14dp</dimen>
+    <dimen name="jsRegNew">30.67dp</dimen>
+    <dimen name="jsLogin_txtMarginleft">39dp</dimen>
+    <dimen name="jsNottry_top">22.33dp</dimen>
+    <dimen name="jsLogin_buttonleft">105dp</dimen>
+    <dimen name="js_historytext">18.33dp</dimen>
+    <!--Filter Margintop & Bottom -->
+    <dimen name="Filter_Marginleft">21dp</dimen>
+    <dimen name="Filter_Marginrightandtop">16dp</dimen>
+    <dimen name="Filter_layouttop">5.33dp</dimen>
+    <dimen name="Filter_layoutbottom">13.33dp</dimen>
+    <dimen name="response_counttext">24.94sp</dimen>
+    <!-- PostJob Margintop & Bottom -->
+    <dimen name="post_MarginTop">15.33dp</dimen>
+    <dimen name="post_MarginleftandRight">10.33dp</dimen>
+    <dimen name="post_Buttontop">15.33dp</dimen>
+    <dimen name="post_Buttonbottom">25.33dp</dimen>
+    <!-- Emp My profile Margin top and Bottom -->
+    <dimen name="empprof_margintop">12dp</dimen>
+    <dimen name="empprof_Marginleftandright">10.67dp</dimen>
+    <!-- Contact us Margin top and bottom -->
+    <dimen name="Contact_Margintop">26.67dp</dimen>
+    <!-- Feedback rating top and bottom -->
+    //
+    <dimen name="Fd_ratetopandbottom">17.33dp</dimen>
+    <dimen name="Fd_top">37.33dp</dimen>
+    <dimen name="langlistbox">38.33dp</dimen>
+    <!-- Employer Dashboard top and bottom -->
+    <dimen name="empdash_left">38.67dp</dimen>
+    <!-- About us image size -->
+    <dimen name="about_midleft">20.67dp</dimen>
+    <dimen name="about_imgtopleftNright">1.33dp</dimen>
+    <dimen name="about_foundernametop">4.67dp</dimen>
+    <dimen name="about_top">18dp</dimen>
+    <dimen name="about_laytop">13dp</dimen>
+    <dimen name="imglay_height">102.33dp</dimen>
+    <dimen name="about_imgheight">81.67dp</dimen>
+    <dimen name="about_imgwidth">288dp</dimen>
+    <dimen name="about_mistop">17dp</dimen>
+    <dimen name="about_abttop">14dp</dimen>
+    <dimen name="about_vistop">24dp</dimen>
+    <dimen name="about_trytop">21.33dp</dimen>
+    <dimen name="about_founderleft">9.67dp</dimen>
+    <dimen name="about_advileft">17.67dp</dimen>
+    <!-- Applied job history -->
+    <dimen name="apptop">6.67dp</dimen>
+    <dimen name="appright">11dp</dimen>
+    <dimen name="appdivider">12.67dp</dimen>
+    <dimen name="butttop">1.67dp</dimen>
+    <dimen name="editboxpadding">7dp</dimen>
+    <!--MyFav -->
+    <dimen name="fav_divider">9dp</dimen>
+    <dimen name="fav_Desgtop">11.33dp</dimen>
+    <dimen name="fav_companytop">2.67dp</dimen>
+    <dimen name="jsMyprof_bottom">31.67dp</dimen>
+    <dimen name="jsMyprof_laytop">12.67dp</dimen>
+
+    <!--My Notifi -->
+    <dimen name="notifil">9.33dp</dimen>
+    <dimen name="notifit">24.33dp</dimen>
+    <!--Location Popup-->
+    <dimen name="marginl">19.33dp</dimen>
+    <dimen name="locsearch">21.67dp</dimen>
+    <dimen name="listbox">45dp</dimen>
+    <dimen name="locsearchh">43.33dp</dimen>
+    <dimen name="locadded">48.33dp</dimen>
+    <dimen name="locheader">46.67dp</dimen>
+    <dimen name="spinner_marLeft">19.33dp</dimen>
+    <!-- New -->
+    <dimen name="oops_top">33dp</dimen>
+    <dimen name="oops_bottom">5.67dp</dimen>
+    <dimen name="oops_button">30.00dp</dimen>
+    <dimen name="oopsbutton_bottom">35dp</dimen>
+    <dimen name="editicon_left">35dp</dimen>
+    <!-- job details of js -->
+    <dimen name="jsheader_left">24.67dp</dimen>
+    <dimen name="emp_imageright">8.59dp</dimen>
+    <dimen name="emp_imgtop">6dp</dimen>
+    <dimen name="emp_expheight">15.67dp</dimen>
+    <dimen name="invalid_height">210.67dp</dimen>
+    <dimen name="invalid_button">45.67dp</dimen>
+    <dimen name="invalid_buttontop">30.33dp</dimen>
+    <dimen name="invalid_buttonwidth">161.67dp</dimen>
+    <dimen name="invalid_buttonheight">44.00dp</dimen>
+    <dimen name="alertdig_height">253.33dp</dimen>
+    <dimen name="alertdig_width">301dp</dimen>
+    <dimen name="alertdialog_height">427.67dp</dimen>
+    <dimen name="alertdialog_width">300.67dp</dimen>
+    <dimen name="alertdialog_top">33.33dp</dimen>
+    <dimen name="alertdialog_right">25dp</dimen>
+    <dimen name="alertdialog_left">30dp</dimen>
+    <dimen name="postparttop">20.33dp</dimen>
+    <dimen name="call_specfleft">27dp</dimen>
+    <dimen name="call_specheight">29dp</dimen>
+    <dimen name="call_ccheckboxtleft">53.33dp</dimen>
+    <dimen name="call_satleft">75dp</dimen>
+    <dimen name="call_tuesleft">58.55dp</dimen>
+    <dimen name="emp_degtxtsize">14.66dp</dimen>
+    <dimen name="emp_qualtxtsize">11.49dp</dimen>
+    <dimen name="call_divheight">13.67dp</dimen>
+    <dimen name="emp_yellowheight">47.33dp</dimen>
+    <dimen name="emp_expnheight">16.33dp</dimen>
+    <dimen name="emp_layheight">77.67dp</dimen>
+    <dimen name="filter_midsize">9dp</dimen>
+    <dimen name="filter_imgleft">19dp</dimen>
+    <dimen name="yellow_topnbottom">6dp</dimen>
+    <dimen name="yellow_nametop">7dp</dimen>
+    <dimen name="filter_layheight">80.33dp</dimen>
+    <dimen name="filter_yellowlayheight">29.33dp</dimen>
+    <dimen name="filter_midlayheight">29.67dp</dimen>
+
+    <dimen name="hme_txtsize">20sp</dimen>
+    <dimen name="js_detailstxtsize">17.67sp</dimen>
+    <dimen name="filter_txtsize">20sp</dimen>
+    <dimen name="filter_listsize">18.33sp</dimen>
+    <dimen name="jd_footersize">17.67sp</dimen>
+    <dimen name="lang_txtsize">22sp</dimen>
+    <dimen name="inal_txtsize">50sp</dimen>
+    <dimen name="emp_headtxtsize">23sp</dimen>
+    <dimen name="emp_detailtxtsize">17.67sp</dimen>
+    <dimen name="emp_dashtxtsize">14.40sp</dimen>
+    <dimen name="emp_posttxttoogle">18.33sp</dimen>
+    <dimen name="emp_cvsize">20sp</dimen>
+    <dimen name="js_loginhmesize">16.42sp</dimen>
+    <dimen name="res_textsize">17.67sp</dimen>
+    <dimen name="congratestost">27.33dp</dimen>
+    <dimen name="js_notitxtsize">18.61sp</dimen>
+    <dimen name="js_notifidivider">4.33dp</dimen>
+    <dimen name="postjob_icon">80dp</dimen>
+    <dimen name="res_roletxtsize">24.49sp</dimen>
+    <dimen name="applied_buttonsize">29.33dp</dimen>
+    <dimen name="shortlist_tickwidth">55dp</dimen>
+    <dimen name="myprof_left">23.5sp</dimen>
+    <dimen name="myprof_right">11.33dp</dimen>
+    <dimen name="show_noleft">17.67dp</dimen>
+    <dimen name="myprof_headersize">16sp</dimen>
+    <dimen name="alertbox_txtsize">21.67sp</dimen>
+    <dimen name="responseslistingleft">7dp</dimen>
+    <dimen name="alertbox_txtsizenew">25sp</dimen>
+    <!--Employer-Page-->
+    <!--Emp_List of candidates-->
+    <dimen name="emp_locname">25.35sp</dimen>
+    <dimen name="emp_desgtxtsize">16.84sp</dimen>
+    <dimen name="emp_listqualsize">14sp</dimen>
+    <dimen name="emp_exptxtsize">37.40sp</dimen>
+    <dimen name="emp_yrstxtsize">9sp</dimen>
+    <dimen name="employeelistingleft">7dp</dimen>
+    <!--Employer and Jobseeker Listrows-->
+    <dimen name="txtSizeHeader">20.89sp</dimen>
+    <dimen name="txtSizeSubHeader">15sp</dimen>
+    <!--Employer & JobSeeker-MyProfile-->
+    <dimen name="jobseeker_namesize">30sp</dimen>
+    <dimen name="togglecall_textsize">20sp</dimen>
+    <dimen name="myprofile_headersize">23sp</dimen>
+    <dimen name="myprofile_contentsize">17.67sp</dimen>
+    <dimen name="js_contentsize">17.67sp</dimen>
+    <!--Common Margins for all pages-->
+    <dimen name="layoutmargintop">10dp</dimen>
+    <!--Overall Job details & Posted job-->
+    <dimen name="marginlr">15dp</dimen>
+    //Marginleft
+    <dimen name="jsdetail_headersize">30sp</dimen>
+    <dimen name="ratingbar_left">30.67dp</dimen>
+    <dimen name="rateus_txtsize">19.59sp</dimen>
+    <dimen name="rateus_txttop">26.67dp</dimen>
+    <dimen name="rateus_txtleft">39.33dp</dimen>
+    <dimen name="rateus_playstoresize">28.14sp</dimen>
+    <dimen name="rateus_buttontxtsize">28.14sp</dimen>
+    <dimen name="rate_buttonright">64.33dp</dimen>
+    <dimen name="filter_iconright">8.67dp</dimen>
+    <!-- posted job detail -->
+    <dimen name="postjobdetailcompaddressbottom">7dp</dimen>
+
+
+</resources>

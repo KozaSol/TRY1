@@ -1,0 +1,264 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/emphome_drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/emp_realtabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#068ec0">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include
+                    layout="@layout/headermenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="10.8" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="4.8"
+                    android:background="@drawable/yellowbg"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/emp_r_h_menu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:contentDescription="@string/app_name"
+                        android:paddingBottom="@dimen/yellow_topnbottom"
+                        android:paddingLeft="@dimen/marginleftright"
+                        android:paddingTop="@dimen/yellow_topnbottom"
+                        android:src="@drawable/menu" />
+
+                    <ImageView
+                        android:id="@+id/emp_r_h_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:background="@null"
+                        android:contentDescription="@string/app_name"
+                        android:paddingBottom="@dimen/yellow_topnbottom"
+                        android:paddingLeft="@dimen/yellow_topnbottom"
+                        android:paddingTop="@dimen/yellow_topnbottom"
+                        android:src="@drawable/username_icon" />
+
+                    <com.jobsearchtry.utils.MyTextView
+                        android:id="@+id/employerdashboard_welcomemsg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/yellow_topnbottom"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:textColor="#000"
+                        android:textSize="@dimen/Filter_Locsize"
+                        customfontdemo:fontName="MyriadPro-BoldCond.otf" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="83.4"
+                    android:background="#e0dacc"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/empdash_left"
+                        android:layout_marginRight="@dimen/empdash_left"
+                        android:layout_marginTop="@dimen/buttonHeightNormal"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/marginlr"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/employer_searchprofile"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:adjustViewBounds="true"
+                                    android:contentDescription="@string/app_name"
+                                    android:src="@drawable/search_profile" />
+
+                                <com.jobsearchtry.utils.MyTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|bottom"
+                                    android:gravity="center"
+                                    android:layout_marginRight="@dimen/cpb_stroke_width"
+                                    android:maxLines="1"
+                                    android:paddingBottom="@dimen/layoutmargintop"
+                                    android:text="@string/searchp"
+                                    android:textColor="#fff"
+                                    android:textSize="@dimen/emp_dashtxtsize"
+                                    customfontdemo:fontName="MyriadPro-Cond.ttf"
+                                    android:id="@+id/myTextView8" />
+
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/employer_postajob"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginTop="@dimen/jsMyprof_bottom"
+                                    android:adjustViewBounds="true"
+                                    android:contentDescription="@string/app_name"
+                                    android:src="@drawable/post_job" />
+
+                                <com.jobsearchtry.utils.MyTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|bottom"
+                                    android:gravity="center"
+                                    android:layout_marginRight="@dimen/yellow_nametop"
+                                    android:maxLines="1"
+                                    android:paddingBottom="@dimen/layoutmargintop"
+                                    android:text="@string/postajob"
+                                    android:textColor="#fff"
+                                    android:textSize="@dimen/emp_dashtxtsize"
+                                    customfontdemo:fontName="MyriadPro-Cond.ttf" />
+                            </FrameLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/Filter_Marginleft"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent">
+
+                                <RelativeLayout
+                                    android:id="@+id/res_img1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <FrameLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <ImageView
+                                            android:id="@+id/emp_responses"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginRight="10dp"
+                                            android:layout_marginTop="@dimen/marginlr"
+                                            android:adjustViewBounds="true"
+                                            android:contentDescription="@string/app_name"
+                                            android:src="@drawable/responses1" />
+
+                                        <com.jobsearchtry.utils.MyTextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center|bottom"
+                                            android:gravity="center"
+                                            android:layout_marginRight="@dimen/margintop"
+                                            android:paddingBottom="@dimen/layoutmargintop"
+                                            android:text="@string/responses"
+                                            android:textColor="#fff"
+                                            android:textSize="@dimen/emp_dashtxtsize"
+                                            customfontdemo:fontName="MyriadPro-Cond.ttf"
+                                            android:id="@+id/myTextView9" />
+                                    </FrameLayout>
+                                </RelativeLayout>
+
+                                <com.jobsearchtry.utils.MyTextView
+                                    android:id="@+id/empd_resText_count"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignRight="@+id/res_img1"
+                                    android:layout_alignTop="@+id/res_img1"
+                                    android:layout_marginTop="-7.4dp"
+                                    android:layout_marginRight="-6dp"
+                                    android:paddingLeft="3dp"
+                                    android:background="@drawable/response_count"
+                                    android:text="3"
+                                    android:gravity="center"
+                                    android:textColor="#fff"
+                                    android:textSize="@dimen/response_counttext"
+                                    android:visibility="visible"
+                                    customfontdemo:fontName="MyriadPro-BoldCond.otf" />
+                            </RelativeLayout>
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/employer_jobsposted"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginTop="@dimen/jsMyprof_bottom"
+                                    android:adjustViewBounds="true"
+                                    android:contentDescription="@string/app_name"
+                                    android:src="@drawable/job_posted" />
+
+                                <com.jobsearchtry.utils.MyTextView
+                                    android:id="@+id/myTextView2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|bottom"
+                                    android:gravity="center"
+                                    android:layout_marginRight="@dimen/emp_imgtop"
+                                    android:paddingBottom="@dimen/layoutmargintop"
+                                    android:text="@string/jobsposted"
+                                    android:textColor="#fff"
+                                    android:textSize="@dimen/emp_dashtxtsize"
+                                    customfontdemo:fontName="MyriadPro-Cond.ttf" />
+                            </FrameLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <include
+                    layout="@layout/bottomblue_footer"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+
+    <include
+        android:id="@+id/emphome_jsmenu"
+        layout="@layout/employer_more"
+        android:layout_width="@dimen/layoutsizeLarge"
+        android:layout_height="match_parent"
+        android:layout_gravity="start" />
+
+</android.support.v4.widget.DrawerLayout>

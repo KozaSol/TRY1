@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#dedede"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="63.2"
+        android:background="#dedede"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/locheader"
+            android:background="#088cbd"
+            android:orientation="horizontal">
+
+            <com.jobsearchtry.utils.MyTextView
+                android:id="@+id/spinn_popupheader"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="@dimen/emp_imageright"
+                android:layout_marginLeft="@dimen/postparttop"
+                android:layout_marginTop="@dimen/emp_imageright"
+                android:layout_weight="0.80"
+                android:gravity="center|start"
+                android:text="@string/location"
+                android:textColor="#fff"
+                android:textSize="@dimen/alertbox_txtsize"
+                customfontdemo:fontName="MyriadPro-BoldCond.otf" />
+
+            <ImageButton
+                android:id="@+id/exit_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|end"
+                android:layout_marginRight="@dimen/emp_imageright"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:src="@drawable/exit" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#dedede"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/spinnerlist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#dedede"
+                android:divider="#2e2e2e"
+                android:scrollbars="none"
+                android:dividerHeight="@dimen/divideheight"
+                android:listSelector="@android:color/transparent" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eeeeee"
+        android:orientation="vertical"
+        android:padding="@dimen/marginleftright">
+
+        <com.jobsearchtry.utils.MyButton
+            android:id="@+id/spinner_done"
+            style="@style/App_ButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/done"
+            customfontdemo:fontName="MyriadPro-BoldCond.otf" />
+    </LinearLayout>
+</LinearLayout>

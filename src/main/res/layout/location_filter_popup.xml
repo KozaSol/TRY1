@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#dedede"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="63.2"
+        android:background="#dedede"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/locstate_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#dedede"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/locheader"
+                android:background="#088cbd"
+                android:orientation="horizontal">
+
+                <com.jobsearchtry.utils.MyTextView
+                    android:id="@+id/loc_popupheader"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="@dimen/emp_imageright"
+                    android:layout_marginLeft="@dimen/postparttop"
+                    android:layout_marginTop="@dimen/emp_imageright"
+                    android:layout_weight="0.80"
+                    android:gravity="center|start"
+                    android:text="@string/location"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/alertbox_txtsizenew"
+                    customfontdemo:fontName="MyriadPro-BoldCond.otf" />
+
+                <ImageButton
+                    android:id="@+id/exit_alert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|end"
+                    android:layout_marginRight="@dimen/emp_imageright"
+                    android:adjustViewBounds="true"
+                    android:background="@color/transparent"
+                    android:src="@drawable/exit" />
+            </LinearLayout>
+
+            <com.jobsearchtry.utils.MyTextView
+                android:id="@+id/loc_locationadded"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/listbox"
+                android:background="@drawable/border_displaycity"
+                android:drawableRight="@drawable/close"
+                android:gravity="center|start"
+                android:paddingLeft="@dimen/postparttop"
+                android:paddingRight="@dimen/closeright"
+                android:textColor="#2e2e2e"
+                android:textSize="@dimen/Text_size"
+                android:visibility="gone"
+                customfontdemo:fontName="MyriadPro-Cond.ttf" />
+
+            <com.jobsearchtry.utils.CustomAutoCompleteTextView
+                android:id="@+id/locfil_citysearch"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/locsearchh"
+                android:background="@drawable/border_searchcity"
+                android:gravity="center|start"
+                android:hint="@string/searchcity"
+                android:imeOptions="actionDone"
+                android:inputType="textAutoComplete"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/postparttop"
+                android:textColor="#919191"
+                android:textColorHint="#80919191"
+                android:textCursorDrawable="@drawable/custom_cursor"
+                android:textSize="@dimen/locsearch"
+                customfontdemo:fontName="MyriadPro-Cond.ttf" />
+
+            <ListView
+                android:id="@+id/filterlocstatelist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#dedede"
+                android:divider="#2e2e2e"
+                android:scrollbars="none"
+                android:dividerHeight="@dimen/divideheight"
+                android:listSelector="@android:color/transparent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/city_view"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="#dedede"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/city_lay_remove_sity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#088cbd"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/cl_cityheader_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:background="@color/transparent"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="center"
+                    android:src="@drawable/back_white" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <com.jobsearchtry.utils.MyTextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#088cbd"
+                        android:text="@string/selectcity"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/alertbox_txtsizenew"
+                        android:textStyle="bold"
+                        customfontdemo:fontName="MyriadPro-BoldCond.otf" />
+
+                    <com.jobsearchtry.utils.MyTextView
+                        android:id="@+id/cl_cityheader"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/textSize"
+                        customfontdemo:fontName="MyriadPro-Cond.ttf" />
+                </LinearLayout>
+            </LinearLayout>
+
+              <com.jobsearchtry.utils.MyTextView
+                android:id="@+id/loccity_locationadded"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/locadded"
+                android:background="@drawable/border_displaycity"
+                android:drawableRight="@drawable/close"
+                android:gravity="center|start"
+                android:paddingLeft="@dimen/marginl"
+                android:paddingRight="@dimen/closeright"
+                android:textColor="#2e2e2e"
+                android:textSize="@dimen/Text_size"
+                android:visibility="gone"
+                customfontdemo:fontName="MyriadPro-Cond.ttf" />
+
+            <com.jobsearchtry.utils.CustomAutoCompleteTextView
+                android:id="@+id/locfilt_citysearch"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/locsearchh"
+                android:background="@drawable/border_searchcity"
+                android:gravity="center|start"
+                android:hint="@string/searchcity"
+                android:imeOptions="actionDone"
+                android:inputType="textAutoComplete"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/marginl"
+                android:textColor="#919191"
+                android:textColorHint="#80919191"
+                android:textCursorDrawable="@drawable/custom_cursor"
+                android:textSize="@dimen/locsearch"
+                customfontdemo:fontName="MyriadPro-Cond.ttf" />
+
+            <ListView
+                android:id="@+id/filterloccitylist"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="#dedede"
+                android:divider="#2e2e2e"
+                android:scrollbars="none"
+                android:dividerHeight="@dimen/divideheight"
+                android:listSelector="@android:color/transparent" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eeeeee"
+        android:orientation="horizontal"
+        android:padding="@dimen/marginleftright">
+
+        <com.jobsearchtry.utils.MyButton
+            android:id="@+id/locresetall_filter"
+            style="@style/App_ButtonStyle"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/resetall"
+            customfontdemo:fontName="MyriadPro-BoldCond.otf" />
+
+        <com.jobsearchtry.utils.MyButton
+            android:id="@+id/locdone_filter"
+            style="@style/App_ButtonStyle"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginleftright"
+            android:layout_weight="1"
+            android:text="@string/done"
+            customfontdemo:fontName="MyriadPro-BoldCond.otf" />
+    </LinearLayout>
+
+</LinearLayout>

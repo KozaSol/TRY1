@@ -1,0 +1,184 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/header"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="8.12" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="4.87"
+        android:background="@drawable/yellowbg"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/yellow_topnbottom"
+            android:layout_marginLeft="@dimen/marginleftright"
+            android:layout_marginTop="@dimen/yellow_topnbottom"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/add_black_icon" />
+
+        <com.jobsearchtry.utils.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/yellow_topnbottom"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/jslogin"
+            android:textColor="#000"
+            android:textSize="@dimen/textSizeAverage"
+            customfontdemo:fontName="MyriadPro-BoldCond.otf" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="86.01"
+        android:background="#e0dacc">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/jslogin_Marginleft"
+            android:layout_marginRight="@dimen/jslogin_Marginright"
+            android:layout_marginTop="@dimen/buttonHeightSmall"
+            android:orientation="vertical">
+
+            <com.jobsearchtry.utils.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="@string/phoneno"
+                android:textColor="#4d4d4d"
+                android:textSize="@dimen/textSize"
+                customfontdemo:fontName="MyriadPro-Cond.ttf" />
+
+            <com.jobsearchtry.utils.CustomAutoCompleteTextView
+                android:id="@+id/mobilenumbervalue"
+                style="@style/App_EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/editboxheight"
+                android:layout_marginTop="@dimen/emp_imgtop"
+                android:hint="@string/phoneno"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                customfontdemo:fontName="MyriadPro-Cond.ttf" />
+
+            <com.jobsearchtry.utils.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/jsloginEdit_Margintop"
+                android:gravity="start"
+                android:text="@string/password"
+                android:textColor="#4d4d4d"
+                android:textSize="@dimen/textSize"
+                customfontdemo:fontName="MyriadPro-Cond.ttf" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.jobsearchtry.utils.MyEditText
+                    android:id="@+id/password"
+                    style="@style/App_EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/editboxheight"
+                    android:layout_marginTop="@dimen/emp_imgtop"
+                    android:hint="@string/password"
+                    android:imeOptions="actionGo"
+                    android:inputType="textPassword"
+                    customfontdemo:fontName="MyriadPro-Cond.ttf" />
+
+                <ImageButton
+                    android:id="@+id/passeye"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/transparent"
+                    android:padding="5dp"
+                    android:src="@drawable/password_eye" />
+            </RelativeLayout>
+
+            <com.jobsearchtry.utils.MyCheckBox
+                android:id="@+id/checkbox_jd_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margintopten"
+                android:button="@drawable/login_checkbox"
+                android:checked="false"
+                android:paddingLeft="@dimen/margintop"
+                android:text="@string/rememberme"
+                android:textColor="#4d4d4d"
+                android:textSize="@dimen/textSize"
+                customfontdemo:fontName="MyriadPro-Cond.ttf" />
+
+            <com.jobsearchtry.utils.MyButton
+                android:id="@+id/tryLogin"
+                style="@style/App_ButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/alertdialog_right"
+                android:text="@string/login"
+                customfontdemo:fontName="MyriadPro-BoldCond.otf" />
+
+            <com.jobsearchtry.utils.MyTextView
+                android:id="@+id/forgotpassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/alertdialog_right"
+                android:gravity="start"
+                android:text="@string/gotoforgotpassword"
+                android:textColor="#a98300"
+                android:textSize="@dimen/today"
+                customfontdemo:fontName="MyriadPro-Cond.ttf" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider"
+                android:layout_marginTop="@dimen/emp_expheight"
+                android:background="@android:drawable/divider_horizontal_textfield" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/emp_expheight"
+                android:orientation="horizontal">
+
+                <com.jobsearchtry.utils.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="@string/nottry"
+                    android:textColor="#4d4d4d"
+                    android:textSize="@dimen/today"
+                    customfontdemo:fontName="MyriadPro-Cond.ttf" />
+            </LinearLayout>
+
+            <com.jobsearchtry.utils.MyTextView
+                android:id="@+id/tryregister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/emp_imgtop"
+                android:gravity="start"
+                android:text="@string/signup"
+                android:textColor="#086fa1"
+                android:textSize="@dimen/textSize"
+                customfontdemo:fontName="MyriadPro-Cond.ttf" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        layout="@layout/bottomblue_footer"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" />
+</LinearLayout>

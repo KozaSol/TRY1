@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/menu_bar"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="2dp">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_marginTop="3dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent">
+
+        <ImageView
+            android:id="@+id/img_tabtxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter" />
+
+        <com.jobsearchtry.utils.MyTextView
+            android:id="@+id/menuText_count"
+            android:layout_width="@dimen/textSizeLarge"
+            android:layout_height="@dimen/textSizeLarge"
+            android:layout_gravity="top|end"
+            android:background="@drawable/count_bg"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="@dimen/textSizeSmall"
+            android:visibility="gone"
+            customfontdemo:fontName="MyriadPro-Cond.ttf" />
+    </FrameLayout>
+
+    <com.jobsearchtry.utils.MyTextView
+        android:id="@+id/menuText"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.6"
+        android:gravity="center|top"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/textSizeAverage"
+        customfontdemo:fontName="MyriadPro-Cond.ttf" />
+</LinearLayout>

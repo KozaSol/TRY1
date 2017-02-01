@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="textSize">25sp</dimen>
+    <dimen name="textSizeSmall">18sp</dimen>
+    <dimen name="textSizeLarge">40sp</dimen>
+    <dimen name="textSizeExtraLarge">50sp</dimen>
+    <dimen name="buttonHeight">75dp</dimen>
+    <dimen name="buttonHeightNormal">60dp</dimen>
+    <dimen name="buttonHeightLarge">90dp</dimen>
+    <dimen name="buttonHeightSmall">45dp</dimen>
+    <dimen name="textSizeToSmall">14sp</dimen>
+    <dimen name="layoutsize">300dp</dimen>
+    <dimen name="layoutsizeLarge">400dp</dimen>
+    <dimen name="seekbarsize">10dp</dimen>
+    <dimen name="top">2dp</dimen>
+    <dimen name="textSizeAverage">17.67dp</dimen>
+    <dimen name="margintop">5dp</dimen>
+    <dimen name="marginleftright">14.67dp</dimen>
+    <dimen name="margintopten">7dp</dimen>
+    <dimen name="layoutmargintop">10dp</dimen>
+    <dimen name="textSizeNormal">30sp</dimen>
+    <dimen name="buttonHeightToSmall">30dp</dimen>
+    <dimen name="loginbutton">165dp</dimen>
+    <dimen name="cpb_stroke_width">4dp</dimen>
+    <dimen name="marginlr">7dp</dimen>
+    <dimen name="margintb">4dp</dimen>
+    <dimen name="joblisttop">5.30dp</dimen>
+    <dimen name="joblistlr">5dp</dimen>
+    <dimen name="categorylr">8dp</dimen>
+    <dimen name="categoryhs">6dp</dimen>
+</resources>

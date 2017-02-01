@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#dedede"
+    android:orientation="vertical">
+
+    <com.jobsearchtry.utils.MyTextView
+        android:id="@+id/fl_popupheader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#086fa1"
+        android:padding="15dp"
+        android:text="@string/location"
+        android:textColor="#fff"
+        android:textSize="@dimen/textSize"
+        customfontdemo:fontName="MyriadPro-Cond.ttf" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#2e2e2e"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="63.2"
+        android:background="#dedede"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#dedede"
+            android:orientation="vertical">
+
+            <com.jobsearchtry.utils.MyTextView
+                android:id="@+id/fl_stateheader"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#086fa1"
+                android:padding="15dp"
+                android:text="@string/state"
+                android:textColor="#fff"
+                android:textSize="@dimen/textSize"
+                customfontdemo:fontName="MyriadPro-Cond.ttf" />
+
+            <ListView
+                android:id="@+id/filterstatelist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/seekbarsize"
+                android:divider="#2e2e2e"
+                android:dividerHeight="@dimen/divideheight" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#2e2e2e"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#dedede"
+            android:orientation="vertical">
+
+            <com.jobsearchtry.utils.MyTextView
+                android:id="@+id/fl_cityheader"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#086fa1"
+                android:padding="15dp"
+                android:text="@string/city"
+                android:textColor="#fff"
+                android:textSize="@dimen/textSize"
+                customfontdemo:fontName="MyriadPro-Cond.ttf" />
+
+            <ListView
+                android:id="@+id/filtercitylist"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/seekbarsize"
+                android:divider="#2e2e2e"
+                android:dividerHeight="@dimen/divideheight" />
+        </LinearLayout>
+    </LinearLayout>
+
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eeeeee"
+        android:orientation="horizontal"
+        android:padding="@dimen/marginleftright">
+
+        <com.jobsearchtry.utils.MyButton
+            android:id="@+id/resetall_filter"
+            style="@style/App_ButtonStyle"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/resetall"
+            customfontdemo:fontName="MyriadPro-BoldCond.otf" />
+
+        <com.jobsearchtry.utils.MyButton
+            android:id="@+id/done_filter"
+            style="@style/App_ButtonStyle"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginleftright"
+            android:layout_weight="1"
+            android:text="@string/done"
+            customfontdemo:fontName="MyriadPro-BoldCond.otf" />
+    </LinearLayout>
+
+</LinearLayout>

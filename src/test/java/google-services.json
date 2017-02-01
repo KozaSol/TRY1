@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "842972313085",
+    "project_id": "firebase-tryy"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:842972313085:android:d7014591d98f1a58",
+        "android_client_info": {
+          "package_name": "com.jobsearchtry"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3mS8eK7QtDVWB7jkrHMP0jf1oZYXmr0s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

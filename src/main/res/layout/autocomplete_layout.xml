@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <ImageView
+        android:id="@+id/suggimage"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center|end"
+        android:layout_weight="0.10"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        android:paddingLeft="@dimen/joblisttop"
+        android:src="@drawable/ic_history" />
+
+    <com.jobsearchtry.utils.MyTextView
+        android:id="@+id/spinneritemqualification"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.80"
+        android:gravity="start|center"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/joblistlr"
+        android:paddingTop="@dimen/jslogin_sugg"
+        android:paddingBottom="@dimen/jslogin_sugg"
+        android:textColor="#000000"
+        android:textSize="@dimen/textSize"
+        customfontdemo:fontName="MyriadPro-Cond.ttf" />
+
+    <ImageView
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center|end"
+        android:layout_weight="0.10"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        android:paddingLeft="@dimen/joblisttop"
+        android:src="@drawable/up_arrow" />
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jobsearchtry.utils.MyCheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    android:id="@android:id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:drawableLeft="@drawable/custom_checkbox"
+    android:drawablePadding="9dp"
+    android:gravity="center_vertical"
+    android:paddingBottom="@dimen/apptop"
+    android:textSize="@dimen/Text_size"
+    customfontdemo:fontName="MyriadPro-Cond.ttf" />

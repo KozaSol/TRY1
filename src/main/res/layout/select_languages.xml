@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.jobsearchtry.utils.MyTextView
+        android:id="@+id/english_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/termsht"
+        android:gravity="center_vertical"
+        android:text="English"
+        android:textColor="#006292"
+        android:textSize="@dimen/textSizeNormal"
+        customfontdemo:fontName="MyriadPro-Cond.ttf" />
+
+    <com.jobsearchtry.utils.MyTextView
+        android:id="@+id/tamil_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/termsht"
+        android:gravity="center_vertical"
+        android:text="Tamil"
+        android:textColor="#006292"
+        android:textSize="@dimen/textSizeNormal"
+        customfontdemo:fontName="MyriadPro-Cond.ttf" />
+
+</LinearLayout>

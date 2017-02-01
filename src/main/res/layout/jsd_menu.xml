@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="0dip"
+    android:layout_weight="12.5"
+    android:background="@android:color/transparent"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.5"
+        android:background="#ffc600"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="12"
+        android:baselineAligned="false"
+        android:background="@drawable/bluebg"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/jsd_calltab"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight=".25"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:contentDescription="@string/app_name"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:src="@drawable/call_icon"/>
+
+            <com.jobsearchtry.utils.MyTextView
+                android:id="@+id/jsd_calltab_text"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="0.6"
+                android:gravity="center|top"
+                android:text="@string/call_sl"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textSizeAverage"
+                android:textStyle="bold"
+                customfontdemo:fontName="MyriadPro-Cond.ttf" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/jsd_emailtab"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight=".25"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:contentDescription="@string/app_name"
+                android:gravity="center"
+                android:src="@drawable/share_icon"/>
+
+            <com.jobsearchtry.utils.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:text="@string/email"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textSizeAverage"
+                android:textStyle="bold"
+                customfontdemo:fontName="MyriadPro-Cond.ttf" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

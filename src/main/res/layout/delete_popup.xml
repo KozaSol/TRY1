@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#dedede"
+    android:orientation="vertical" >
+
+    <com.jobsearchtry.utils.MyTextView
+        android:id="@+id/d_popupheader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#086fa1"
+        android:padding="@dimen/marginleftright"
+        android:textColor="#fff"
+        android:textSize="@dimen/textSize"
+        customfontdemo:fontName="MyriadPro-Cond.ttf" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/divider"
+        android:background="#2e2e2e"
+        android:orientation="horizontal" />
+
+    <com.jobsearchtry.utils.MyTextView
+        android:id="@+id/d_popup_subheader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:padding="@dimen/marginleftright"
+        android:textColor="#040404"
+        android:textSize="@dimen/textSize"
+        customfontdemo:fontName="MyriadPro-Cond.ttf" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/marginleftright"
+        android:orientation="horizontal" >
+
+        <com.jobsearchtry.utils.MyButton
+            android:id="@+id/d_yes"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            style="@style/App_ButtonStyle"
+            android:layout_weight="1"
+            android:text="@string/yes"
+            customfontdemo:fontName="MyriadPro-BoldCond.otf" />
+
+        <com.jobsearchtry.utils.MyButton
+            android:id="@+id/d_no"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            style="@style/App_ButtonStyle"
+            android:layout_marginLeft="@dimen/marginleftright"
+            android:layout_weight="1"
+            android:text="@string/no"
+            customfontdemo:fontName="MyriadPro-BoldCond.otf" />
+    </LinearLayout>
+
+</LinearLayout>
